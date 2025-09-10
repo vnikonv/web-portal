@@ -1,37 +1,37 @@
 <template>
-  <div style="height:100vh; width:100vw">
-    <lMap
-      :zoom="11"
-      :center="petropavl"
-      :use-global-leaflet="false"
-      style="height:100%; width:100%;"
-    >
-      <lTileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="&copy; OpenStreetMap contributors"
-      />
+    <div style="height:100vh; width:100vw">
+        <lMap
+            :zoom="11"
+            :center="petropavl"
+            :use-global-leaflet="false"
+            style="height:100%; width:100%;"
+        >
+        <lTileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution="&copy; OpenStreetMap contributors"
+        />
 
-      <!-- City marker -->
-      <lMarker :lat-lng="petropavl" :draggable="false">
+        <!-- City marker -->
+        <lMarker :lat-lng="petropavl" :draggable="false">
         <lTooltip permanent direction="top">Petropavlovsk (NKR)</lTooltip>
         <lPopup>Petropavlovsk, North Kazakhstan Region</lPopup>
-      </lMarker>
+        </lMarker>
 
-      <!-- Lakes marker-->
-      <lMarker
-        v-for="(lake, i) in lakes"
-        :key="i"
-        :lat-lng="[lake.lat, lake.lng]"
-        :draggable="false"
-      >
-        <lTooltip permanent direction="top">{{ lake.name }}</lTooltip>
-        <lPopup>
-          <strong>{{ lake.name }}</strong><br />
-          Coordinates: {{ lake.lat }}, {{ lake.lng }}
-        </lPopup>
-      </lMarker>
-    </lMap>
-  </div>
+        <!-- Lakes marker-->
+        <lMarker
+            v-for="(lake, i) in lakes"
+            :key="i"
+            :lat-lng="[lake.lat, lake.lng]"
+            :draggable="false"
+        >
+            <lTooltip permanent direction="top">{{ lake.name }}</lTooltip>
+            <lPopup>
+            <strong>{{ lake.name }}</strong><br />
+            Coordinates: {{ lake.lat }}, {{ lake.lng }}
+            </lPopup>
+        </lMarker>
+        </lMap>
+    </div>
 </template>
 
 <script setup lang="ts">
