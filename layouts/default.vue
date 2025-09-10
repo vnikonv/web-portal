@@ -1,6 +1,6 @@
 <template>
 
-    <header class = "z-[3] flex flex-row text-purple-300 font-bold w-full items-center relative bg-gray-100 border-b-2 border-gray-400 max-sm:justify-between max-sm:relative p-2">
+    <header class = "z-[500] flex flex-row text-purple-300 font-bold w-full items-center relative bg-gray-100 border-b-2 border-purple-400 max-sm:justify-between max-sm:relative p-2">
     <div class = "basis-1/4 items-center justify-start px-8 min-w-40 max-sm:basis-auto">
     <img src = "assets/images/favicon.ico" class = "w-20 h-20 bg-transparent">
     </div>
@@ -11,8 +11,8 @@
     'max-sm:hidden': !burger}">
     <NuxtLink to = "/" class = "my-auto p-2 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-purple-700 max-sm:text-center">Coordinates</NuxtLink>
     <div class = "my-auto p-2 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center max-sm:px-0 max-sm:pb-0" @click = "switch_submenu">Hydrology
-        <div class = "flex flex-col top-full bg-white text-purple-700 w-56 text-center max-sm:relative max-sm:w-full max-sm:bg-[#00a3b9] max-sm:text-white" v-show = "submenu">
-            <NuxtLink to = "/Lab3" class = "my-auto p-2 border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:border-t-2 max-sm:text-center">Water level</NuxtLink>
+        <div class = "absolute flex flex-col top-full bg-white text-purple-700 w-56 text-center max-sm:relative max-sm:w-full max-sm:bg-[#00a3b9] max-sm:text-white" v-show = "submenu">
+            <NuxtLink to = "/Lab3" class = "my-auto p-2 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:border-t-2 border-2 border-t-purple-400 border-b-purple-700 max-sm:text-center">Water level</NuxtLink>
             <NuxtLink to = "/Lab4" class = "my-auto p-2 border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center">Transparency</NuxtLink>
             <NuxtLink to = "/Lab5" class = "my-auto p-2 border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center">Temperature</NuxtLink>
             <NuxtLink to = "/Lab6" class = "my-auto p-2 border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:border-purple-700 max-sm:text-center">Conductivity</NuxtLink>
@@ -36,7 +36,7 @@
 
     </header>
 
-    <main class = "z-[2] flex p-[4px] h-screen">
+    <main class = "z-[2] flex h-screen p-0">
         <slot />
     </main>
 
