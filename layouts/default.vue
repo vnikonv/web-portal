@@ -2,7 +2,7 @@
 
     <header class = "z-[500] flex flex-row text-purple-300 font-bold w-screen items-center relative bg-gray-100 border-b-2 border-purple-400 max-sm:justify-between max-sm:relative p-2">
     <div class = "basis-1/4 items-center justify-start px-8 min-w-40 max-sm:basis-auto">
-    <img src = "assets/images/favicon.ico" class = "w-20 h-20 bg-transparent">
+    <img src = "assets/images/favicon.ico" class = "w-10 h-10 bg-transparent">
     </div>
     <div class = "basis-1/4 max-sm:basis-auto"></div>
 
@@ -42,7 +42,7 @@
     </main>
 
 
-    <footer class = "flex flex-row w-full bg-gray-100 border-t-2 border-gray-400 items-center justify-center px-4 py-2 gap-8">
+    <footer class = "flex flex-row w-full bg-gray-100 border-t-2 border-purple-400 items-center justify-center px-4 py-2 gap-8">
         <a href="https://www.youtube.com/"><img src="assets/images/youtube.png" class="w-16 h-4 bg-transparent"></a>
         <a href="https://github.com/"><img src="assets/images/github.png" class="w-8 h-8 bg-transparent"></a>
         <a href="https://www.facebook.com/"><img src="assets/images/bsky.png "class = "w-8 h-8 bg-transparent"></a>
