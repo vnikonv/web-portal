@@ -42,10 +42,10 @@
     </main>
 
 
-    <footer class = "flex flex-row w-full bg-gray-100 border-t-2 border-gray-400 items-center justify-center px-4 py-2 gap-4">
-        <a href="https://www.youtube.com/"><img src="assets/images/youtube.png" class="w-16 h-16"></a>
-        <a href="https://github.com/"><img src="assets/images/github.png" class="w-16 h-16"></a>
-        <a href="https://www.facebook.com/"><img src="assets/images/bsky.png "class = "w-16 h-16 bg-transparent"></a>
+    <footer class = "flex flex-row w-full bg-gray-100 border-t-2 border-gray-400 items-center justify-center px-4 py-2 gap-8">
+        <a href="https://www.youtube.com/"><img src="assets/images/youtube.png" class="w-16 h-4 bg-transparent"></a>
+        <a href="https://github.com/"><img src="assets/images/github.png" class="w-8 h-8 bg-transparent"></a>
+        <a href="https://www.facebook.com/"><img src="assets/images/bsky.png "class = "w-8 h-8 bg-transparent"></a>
     </footer>
 
 </template>
