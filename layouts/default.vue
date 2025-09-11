@@ -1,21 +1,22 @@
 <template>
 
-    <header class = "z-[500] flex flex-row text-purple-300 font-bold w-full items-center relative bg-gray-100 border-b-2 border-purple-400 max-sm:justify-between max-sm:relative p-2">
+    <header class = "z-[500] flex flex-row text-purple-300 font-bold w-screen items-center relative bg-gray-100 border-b-2 border-purple-400 max-sm:justify-between max-sm:relative p-2">
     <div class = "basis-1/4 items-center justify-start px-8 min-w-40 max-sm:basis-auto">
     <img src = "assets/images/favicon.ico" class = "w-20 h-20 bg-transparent">
     </div>
     <div class = "basis-1/4 max-sm:basis-auto"></div>
 
-    <nav :class = "{'basis-1/2 flex flex-row items-center justify-end px-8 gap-4': !burger || burger,
-    'max-sm:basis-auto max-sm:absolute max-sm:top-full max-sm:w-full max-sm:justify-center max-sm:flex-col max-sm:gap-0 max-sm:bg-white max-sm:px-0': burger,
+    <nav :class = "{'basis-1/2 flex flex-row items-center justify-end px-8 gap-4 max-sm:w-screen': !burger || burger,
+    'max-sm:basis-auto max-sm:absolute max-sm:top-full max-sm:left-0 max-sm:justify-center max-sm:flex-col max-sm:gap-0 max-sm:bg-white max-sm:px-0': burger,
     'max-sm:hidden': !burger}">
-    <NuxtLink to = "/" class = "my-auto p-2 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-purple-700 max-sm:text-center">Coordinates</NuxtLink>
-    <div class = "my-auto p-2 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center max-sm:px-0 max-sm:pb-0" @click = "switch_submenu">Hydrology
-        <div class = "absolute flex flex-col top-full bg-white text-purple-700 w-56 text-center max-sm:relative max-sm:w-full max-sm:bg-[#00a3b9] max-sm:text-white" v-show = "submenu">
-            <NuxtLink to = "/Lab3" class = "my-auto p-2 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:border-t-2 border-2 border-t-purple-400 border-b-purple-700 max-sm:text-center">Water level</NuxtLink>
-            <NuxtLink to = "/Lab4" class = "my-auto p-2 border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center">Transparency</NuxtLink>
-            <NuxtLink to = "/Lab5" class = "my-auto p-2 border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center">Temperature</NuxtLink>
-            <NuxtLink to = "/Lab6" class = "my-auto p-2 border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:border-purple-700 max-sm:text-center">Conductivity</NuxtLink>
+    <NuxtLink to = "/" class = "my-auto p-2 max-sm:w-screen hover:bg-purple-300 hover:text-white max-sm:border-b-2 max-sm:border-purple-700 max-sm:text-center">Coordinates</NuxtLink>
+    <div class = "my-auto p-2 max-sm:w-screen hover:bg-purple-300 hover:text-white max-sm:text-center max-sm:px-0 max-sm:pb-0" @click = "switch_submenu">Hydrology
+        <div class = "absolute flex flex-col top-full bg-white text-purple-700 w-56 text-center max-sm:relative max-sm:w-full" v-show = "submenu">
+            <NuxtLink to = "/Lab3" class = "my-auto p-2 border-0 bg-white hover:bg-purple-300 hover:text-white max-sm:w-full border-t-2 border-b-2
+            border-t-purple-400 border-b-purple-700 max-sm:text-center">Water level</NuxtLink>
+            <NuxtLink to = "/Lab4" class = "my-auto p-2 bg-white border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center">Transparency</NuxtLink>
+            <NuxtLink to = "/Lab5" class = "my-auto p-2 bg-white border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center">Temperature</NuxtLink>
+            <NuxtLink to = "/Lab6" class = "my-auto p-2 bg-white border-b-2 border-purple-700 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:text-center">Conductivity</NuxtLink>
         </div>
     </div>
         <NuxtLink to = "/inform" :class = "{'my-auto p-2 hover:bg-purple-300 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-purple-700 max-sm:text-center': submenu,
